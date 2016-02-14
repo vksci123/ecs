@@ -1,0 +1,138 @@
+
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300);
+.content_wrapper {
+        min-height: 700px;
+}
+
+.wd_100 {
+    width:100%;
+    height:100% ;
+    float:left ;
+}
+
+body {
+    width: 100%;
+    float: left;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Condensed';
+}
+
+.body_container {
+    width: 100%;
+    height: 100%;
+    min-height: 700px ;
+    float: left;
+    background: url('/styles/pic_4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.body_container .overlay    {
+    width: 100%;
+    height: 100%;
+    background: #1C364B;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.body_container .login_container {
+  width: 35%;
+  margin: auto;
+  background: #FFF;
+  padding: 40px 50px;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.body_container .login_container .logo {
+  width: 150px;
+}
+.body_container .login_container .heading {
+  text-align: center;
+  font-size: 18px;
+  color: #1C364B;
+  padding: 20px 0;
+}
+
+.body_container .login_container .heading_main {
+    text-align: center;
+    font-size: 25px;
+    color: #1C364B;
+
+}
+.body_container .login_container .form {
+  text-align: center;
+}
+.body_container .login_container .form .custom_input {
+  position: relative;
+  margin-bottom: 30px;
+}
+.body_container .login_container .form .custom_input label {
+  letter-spacing: 1px;
+  font-size: 18px;
+  color: #B5B5B5;
+  position: absolute;
+  font-weight: 300;
+  top: 15;
+  left: 0;
+  pointer-events: none;
+  margin-bottom: 0;
+  transition: all 0.2s ease;
+}
+.body_container .login_container .form .custom_input .line_active {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+.body_container .login_container .form .custom_input input {
+  border: none;
+  border-bottom: 1px solid #DEDEDA;
+  padding: 15px 15px 15px 0;
+  width: 100%;
+  display: block;
+  font-size: 16px;
+  color: #1C364B;
+  letter-spacing: 0.3px;
+  font-weight: 400;
+}
+.body_container .login_container .form .custom_input input:focus {
+  outline: none;
+}
+.body_container .login_container .form .custom_input input:focus ~ label {
+  top: -15px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #F13431;
+  letter-spacing: 0.3px;
+}
+.body_container .login_container .form .custom_input input:valid ~ label {
+  top: -15px;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+}
+.body_container .login_container .login_btn {
+  width: 100%;
+  background: #F13431;
+  padding: 10px;
+  cursor: pointer;
+  color: #FFF;
+  margin-top: 30px;
+  border: 0;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+  transition: all 0.1s;
+}
+.body_container .login_container .login_btn:hover {
+  background: #ef1511;
+}
